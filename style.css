@@ -145,7 +145,7 @@ button:active{
     font-size: 1.25rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1300px) {
     *{
         margin: 0;
         padding: 0;
@@ -157,7 +157,6 @@ button:active{
         display: grid;
         grid-template-areas:
         "image"
-        "form"
         "form"
         "form"
         ;
@@ -235,8 +234,8 @@ button:active{
     }
     input{
         border-radius: 10px;
-        width: 80%;
-        height: 30px;
+        width: 90%;
+        height: 2rem;
         border: 2px solid lightgreen;
         padding: 1rem 0.5rem;
         font-size: 20px;
@@ -265,7 +264,7 @@ button:active{
     }
     button{
         position: relative;
-        left: 60px;
+        left: 40px;
         padding: 1rem 3rem;
         font-size: 20px;
         background:linear-gradient(135deg, rgb(235, 226, 226), lightgreen 60%);
@@ -278,7 +277,7 @@ button:active{
         font-weight: 700;
         cursor: pointer;
         transition: all 1s ease;
-        margin-bottom:1rem;
+        
     }
     button:hover{
         box-shadow: -0.5rem -0.5rem 1rem lightgreen,
@@ -291,6 +290,8 @@ button:active{
     
     #have-an-account{
         font-style: italic;
+        text-align: center;
+        font-size: 1.25rem;
     }
     
     #validate-password{
@@ -302,6 +303,7 @@ button:active{
         text-transform: lowercase;
         font-style: italic;
         letter-spacing: 1px;
-        font-size: 1.25rem;
+        font-size: 1rem;
+        margin: 0.5rem;
     } 
   }
