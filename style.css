@@ -210,7 +210,7 @@ button:active{
     }
   
        .intro::first-letter{
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
     #label-container{
         width: 100%;
@@ -230,7 +230,7 @@ button:active{
         display: grid;
     }
     label{
-        font-size: 25px;
+        font-size: 1rem;
         letter-spacing: 1px;
     }
     input{
@@ -246,9 +246,14 @@ button:active{
     input:invalid{
         border: 2px solid red;
     }
-    /*
+    #text-container{
+        width: 40%;
+    }
+    #form-container{
+        padding: 1rem 0rem;
+    }
     p{
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     #required-p{
@@ -256,7 +261,7 @@ button:active{
         font-size: 1.1rem;
     }
     h1,p{
-        padding: 0rem 4rem;
+        padding: 1rem 1rem;
     }
     button{
         position: relative;
@@ -298,5 +303,5 @@ button:active{
         font-style: italic;
         letter-spacing: 1px;
         font-size: 1.25rem;
-    } */
+    } 
   }
