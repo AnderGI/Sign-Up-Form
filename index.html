@@ -8,73 +8,78 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+
  <div id="img-container">
 
     <div id="inside-img-container"></div>
     <h2 id="photo-rights">Photo By Visax On Unsplash</h2>
 </div>
  <div id="sign-up-container">
-    <p class="intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam unde consequuntur eligendi omnis consectetur quas beatae repellendus voluptate vel nisi.</p>
- </br>
-    <p class="intro">Lorem ipsum dolor sit amet consectetur.</p>
-</br>
-</br>
-    <div id="form-container">
-        <form action="#" method="post">
-            
-            <h1>This is a form.</h1>
+    <div if="text-container">
+        <h1>This is a form.</h1>
         <br>
-            <p id="required-p">All the required inputs ar marked with an * symbol.</p>
+        <p id="required-p">All the required inputs ar marked with an * symbol.</p>
         <br>
-        <div id="label-container">
-            <div>
-        <label for="user-first-name"><span aria-label="required">*</span>First Name:</label>
-        <br>
-        <input type="name" name="user-first-name" id="user-first-name" required>
-        <br>
-            </div>
-            <div>
-        <label for="user-last-name"><span aria-label="required">*</span>Last Name:</label>
-        <br>
-        <input type="name" name="user-last-nameid="user-last-name" required>
-        <br>
-    </div>
-<div>
-        <label for="user-email"><span aria-label="required">*</span>Email: </label>
-        <br>
-        <input type="email" name="user-email" id="user-email" required>
-        <br>
-</div>
-<div>
-        <label for="user-phone-numb"><span aria-label="required">*</span>Phone Number: </label>
-        <br>
-        <input type="tel" name="user-phone-numb" id="user-phone-numb" required>
-        <br>
-    </div>
-<div>
-        <label for="user-password"><span aria-label="required">*</span>Password: </label>
-        <br>
-        <input type="password" name="user-password" id="user-password" required>
-        <br>
-        <p id="validate-password"></p>
-</div>
-<div>
-        <label for="confirm-password"><span aria-label="required">*</span>Confirm Password: </label>
-        <br>
-        <input type="password" name="confirm-password" id="confirm-password" required>
-        <br>
-    </div>
-    </div>
-    
-        </form>
-        <br>
-        <br>
-        <button type="submit" id="submit">Create Account</button>
-        <br>
-        <br>
-        <p id="have-an-account">Already have an account? <a href="#" target="_blank">Log in</a></p>
+        <p class="intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam unde consequuntur eligendi omnis consectetur quas beatae repellendus voluptate vel nisi.</p>
+        </br>
+        <p class="intro">Lorem ipsum dolor sit amet consectetur.</p>
+        </br>
+        </br>
     </div>
 
+    <div id="form-container">
+        <form action="#" method="post">
+            <div id="label-container">
+                <div>
+                    <label for="user-first-name"><span aria-label="required">*</span>First Name:</label>
+                    <br>
+                <input type="name" name="user-first-name" id="user-first-name" required>
+                    <br>
+                </div>
+
+                <div>
+                    <label for="user-last-name"><span aria-label="required">*</span>Last Name:</label>
+                    <br>
+                    <input type="name" name="user-last-nameid="user-last-name" required>
+                    <br>
+                </div>
+
+                <div>
+                    <label for="user-email"><span aria-label="required">*</span>Email: </label>
+                    <br>
+                    <input type="email" name="user-email" id="user-email" required>
+                    <br>
+                </div>
+
+                <div>
+                    <label for="user-phone-numb"><span aria-label="required">*</span>Phone Number: </label>
+                    <br>
+                    <input type="tel" name="user-phone-numb" id="user-phone-numb" required>
+                    <br>
+                </div>
+
+                <div>
+                    <label for="user-password"><span aria-label="required">*</span>Password: </label>
+                    <br>
+                    <input type="password" name="user-password" id="user-password" required>
+                    <br>
+                </div>
+                <div>
+                    <label for="confirm-password"><span aria-label="required">*</span>Confirm Password: </label>
+                    <br>
+                    <input type="password" name="confirm-password" id="confirm-password" required>
+                    <br>
+                </div>
+            </div>
+            <p id="validate-password"></p>
+            <br>
+            <br>
+            <button type="submit" id="submit">Create Account</button>
+            <br>
+            <br>
+            <p id="have-an-account">Already have an account? <a href="#" target="_blank">Log in</a></p>
+        </form>
+    </div>
  </div>
 
  <script src="script.js"></script>

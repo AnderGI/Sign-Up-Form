@@ -4,14 +4,21 @@ const buttonEl = document.getElementById('submit')
 const validateEl = document.getElementById('validate-password')
 
 function validatePassword(){
-    if(passwordEl.value === "" && confirmPass.value === ""){
-        validateEl.textContent = '*password must not be empty'
+    const validation = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,20}$/g
+
+
+    if(passwordEl.value.match(/[password]/gi)){
+        validateEl.textContent += `*Your password can\'t equal to password or password `
     }
-    if(passwordEl.value===confirmPass.value && !(passwordEl.value === "" && confirmPass.value === "")){
-        validateEl.textContent = '*they are the same'
+   /* if(passwordEl.value === "" && confirmPass.value === ""){
+        validateEl.textContent = '*Your password must not be empty'
     }
     if(passwordEl.value!==confirmPass.value){
-        validateEl.textContent = '*they are not the same'
+        validateEl.textContent = '*Both passwords are not the same they are not the same'
+    }*/
+     if(! passwordEl.value.match(validation)){
+        validateEl.textContent += ` *Your password must contain between 8 and 20 letters 
+        at least one upper case letter, one lower case, one number and one special character`
     }
 
 }
