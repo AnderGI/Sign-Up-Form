@@ -52,7 +52,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: white;
+    background-color: wheat;
     padding: 0rem 1rem;
 }
 #label-container{
@@ -78,7 +78,7 @@ label{
 }
 input{
     border-radius: 10px;
-    width: 300px;
+    width: 80%;
     height: 30px;
     border: 2px solid lightgreen;
     padding: 1rem 0.5rem;
@@ -91,7 +91,7 @@ input:invalid{
 }
 p{
     font-size: 1.5rem;
-    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #required-p{
     font-style: italic;
@@ -115,12 +115,32 @@ button{
     font-weight: 700;
     cursor: pointer;
     transition: all 1s ease;
+    margin-bottom:1rem;
 }
 button:hover{
     box-shadow: -0.5rem -0.5rem 1rem lightgreen,
     0.5rem 0.5rem 1rem lightgreen;
 }
 button:active{
-    box-shadow: .inset -0.2rem -0.2rem 1rem lightgreen,
-    .inset 0.2rem 0.2rem 1rem lightgreen;   
+    box-shadow: inset -0.2rem -0.2rem 1rem lightgreen,
+    inset 0.2rem 0.2rem 1rem lightgreen;   
+}
+
+#have-an-account{
+    font-style: italic;
+}
+
+.intro::first-letter{
+    font-size: 2rem;
+}
+#validate-password{
+    width:100%;
+    padding: 0;
+    color: red;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 700;
+    text-transform: lowercase;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 1.25rem;
 }
